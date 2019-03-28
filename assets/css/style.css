@@ -6,7 +6,7 @@
 
     100% Free To use For Personal And Commercial Use.
     IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
+
     ========================================================  */
 
 
@@ -75,7 +75,7 @@ h2 {
   HOME SECTION STYLES
  ============================================================ */
 #home-sec {
-    background: url(../img/home.jpg) no-repeat center center;
+    background: url(../img/lol.png) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -128,7 +128,7 @@ h2 {
 }
 
 /* =============================================================
-  FEATURES SECTION STYLES 
+  FEATURES SECTION STYLES
  ============================================================ */
 #features-sec h3 {
     color: #666565;
@@ -159,7 +159,7 @@ h2 {
 
 
 /* =============================================================
-  SKILL SECTION STYLES 
+  SKILL SECTION STYLES
  ============================================================ */
 #skill-sec h4 {
     text-align: center;
@@ -182,7 +182,7 @@ h2 {
         background-color: rgba(5, 5, 5, 0.45);
     }
 /* =============================================================
-  ADVANCE SECTION STYLES 
+  ADVANCE SECTION STYLES
  ============================================================ */
 #advance-sec h3 {
     color: #666565;
@@ -194,7 +194,7 @@ h2 {
 }
 
 /* =============================================================
-  JUST SECTION STYLES 
+  JUST SECTION STYLES
  ============================================================ */
 #just-sec {
     padding: 0;
