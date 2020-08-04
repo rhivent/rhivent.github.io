@@ -6,7 +6,7 @@
  html {
   height: 100vh;
 }
-
+@import "~antd/dist/antd.css";
 body {
   height: 100vh;
   min-height: 35rem;
