@@ -2,35 +2,35 @@ import React from "react";
 
 export default (props) => {
   return(<>
-    <div class="border-top top-position">
-      <div class="social-icons-wrapper fadeIn-element">
-        <ul class="social-icons">
-          <li class="social-icon">
-            <a class="ion-social-twitter" href="#"></a>
+    <div className="border-top top-position">
+      <div className="social-icons-wrapper fadeIn-element">
+        <ul className="social-icons">
+          <li className="social-icon">
+            <a className="ion-social-twitter" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="ion-social-facebook" href="#"></a>
+          <li className="social-icon">
+            <a className="ion-social-facebook" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="ion-social-googleplus" href="#"></a>
+          <li className="social-icon">
+            <a className="ion-social-googleplus" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="ion-social-youtube" href="#"></a>
+          <li className="social-icon">
+            <a className="ion-social-youtube" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="ion-social-linkedin" href="#"></a>
+          <li className="social-icon">
+            <a className="ion-social-linkedin" href="#"></a>
           </li>
-          <li class="social-icon">
-            <a class="ion-social-pinterest" href="#"></a>
+          <li className="social-icon">
+            <a className="ion-social-pinterest" href="#"></a>
           </li>
         </ul>
       </div>
-      <div class="instagram-feed-mobile-launcher toggle-instagram-feed-content fadeIn-element">
-        <a class="ion-social-instagram" href="#"></a>
+      <div className="instagram-feed-mobile-launcher toggle-instagram-feed-content fadeIn-element">
+        <a className="ion-social-instagram" href="#"></a>
       </div>
-      <div class="languages fadeIn-element">
+      <div className="languages fadeIn-element">
         <ul>
-          <li class="active">
+          <li className="active">
             <a href="#">EN</a>
           </li>
           <li>
@@ -41,14 +41,14 @@ export default (props) => {
           </li>
         </ul>
       </div>
-      <div class="template-title fadeIn-element">
+      <div className="template-title fadeIn-element">
         The One
       </div>
-      <div class="location-launcher fadeIn-element">
-        <a class="location-modal-launcher">Location</a>
+      <div className="location-launcher fadeIn-element">
+        <a className="location-modal-launcher">Location</a>
       </div>
-      <div class="contact-launcher fadeIn-element">
-        <a class="contact-modal-launcher">Contact</a>
+      <div className="contact-launcher fadeIn-element">
+        <a className="contact-modal-launcher">Contact</a>
       </div>
     </div>
   </>);

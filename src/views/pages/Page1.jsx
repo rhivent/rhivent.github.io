@@ -3,15 +3,15 @@ import { Carousel } from 'antd';
 
 const PageOne = (props) => {
   const contentStyle = {
-    height: '160px',
+    height: '100vh',
     color: '#fff',
-    lineHeight: '160px',
+    lineHeight: 'calc(50vh)',
     textAlign: 'center',
     background: '#364d79',
   };
 
   return (
-    <Carousel autoplay>
+    <Carousel autoplay style={{height:'100vh'}}>
     <div>
       <h3 style={contentStyle}>1</h3>
     </div>
