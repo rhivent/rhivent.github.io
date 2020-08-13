@@ -1,5 +1,5 @@
 import React from "react";
-
+import MyLogo from "../../vendor/media/image/mylogo.svg";
 export default (props) => {
   return(<>
     <div className="border-top top-position">
@@ -42,7 +42,7 @@ export default (props) => {
         </ul>
       </div>
       <div className="template-title fadeIn-element">
-        The One
+        <img src={MyLogo} alt="Riventus" width="15%" />
       </div>
       <div className="location-launcher fadeIn-element">
         <a className="location-modal-launcher">Location</a>
