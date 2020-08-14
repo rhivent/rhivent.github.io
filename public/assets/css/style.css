@@ -2588,7 +2588,7 @@ z-index: 5;
 @media only screen and (max-width: 640px) {
   .template-title {
     font-size: 25px;
-    margin-top: -20px;
+    /* margin-top: -20px; */
   }
 }
 

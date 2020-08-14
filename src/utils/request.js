@@ -17,55 +17,55 @@ const getHeaders = () => {
 }
 
 const getOption = (method, url, data) => {
-    return { headers: getHeaders(), method, url: `${apiUrl}/${url}`, data }
+  return { headers: getHeaders(), method, url: `${apiUrl}/${url}`, data }
 }
 
 const app = {
-    get: async (url) => {
-        const option = getOption('get', url);
-        try {
-          const { data } = await axios.request(option);
-          return data;
-        } catch (err) {
-          handlingErrorResp(err);
-        }
-    },
-    post: async (url, params) => {
-        const option = getOption('post', url, params);
-        try {
-          const { data } = await axios.request(option);
-          return data;
-        } catch (err) {
-          handlingErrorResp(err);
-        }
-    },
-    patch: async (url, params) => {
-        const option = getOption('patch', url, params);
-        try {
-          const { data } = await axios.request(option);
-          return data;
-        } catch (err) {
-          handlingErrorResp(err);
-        }
-    },
-    put: async (url, params) => {
-        const option = getOption('put', url, params);
-        try {
-          const { data } = await axios.request(option);
-          return data;
-        } catch (err) {
-          handlingErrorResp(err);
-        }
-    },
-    delete: async (url, params) => {
-        const option = getOption('delete', url, params);
-        try {
-          const { data } = await axios.request(option);
-          return data;
-        } catch (err) {
-          handlingErrorResp(err);
-        }
+  get: async (url) => {
+    const option = getOption('get', url);
+    try {
+      const { data } = await axios.request(option);
+      return data;
+    } catch (err) {
+      handlingErrorResp(err);
     }
+  },
+  post: async (url, params) => {
+    const option = getOption('post', url, params);
+    try {
+      const { data } = await axios.request(option);
+      return data;
+    } catch (err) {
+      handlingErrorResp(err);
+    }
+  },
+  patch: async (url, params) => {
+    const option = getOption('patch', url, params);
+    try {
+      const { data } = await axios.request(option);
+      return data;
+    } catch (err) {
+      handlingErrorResp(err);
+    }
+  },
+  put: async (url, params) => {
+    const option = getOption('put', url, params);
+    try {
+      const { data } = await axios.request(option);
+      return data;
+    } catch (err) {
+      handlingErrorResp(err);
+    }
+  },
+  delete: async (url, params) => {
+    const option = getOption('delete', url, params);
+    try {
+      const { data } = await axios.request(option);
+      return data;
+    } catch (err) {
+      handlingErrorResp(err);
+    }
+  }
 };
 
 export const initialEndpoint = "";

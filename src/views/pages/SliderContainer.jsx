@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import Dashboard from "../components/Dashboard";
 
 const SliderContainer = (props) => {
   const contentStyle = {
@@ -13,7 +14,7 @@ const SliderContainer = (props) => {
   return (
     <Carousel autoplay style={{height:'100vh'}}>
     <div>
-      <h3 style={contentStyle}>1</h3>
+      <Dashboard />
     </div>
     <div>
       <h3 style={contentStyle}>2</h3>

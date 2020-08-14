@@ -1,7 +1,6 @@
 import React from "react";
-import { Button } from "antd";
+import { Button,Modal } from "antd";
 import MyLogo from "../../vendor/media/image/mylogo.svg";
-import Modal from "antd/lib/modal/Modal";
 
 export default (props) => {
   const [loc,setLoc] = React.useState(false);
@@ -41,7 +40,7 @@ export default (props) => {
         <a className="location-modal-launcher"><Button type="text" onClick={() => setLoc(true)} style={{color:'whitesmoke'}}>Location</Button></a>
       </div>
       <div className="contact-launcher fadeIn-element">
-        <a class="contact-modal-launcher"><Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Contact</Button></a>
+        <a className="contact-modal-launcher"><Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Contact</Button></a>
       </div>
     </div>
     <Modal 
