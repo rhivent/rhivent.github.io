@@ -24,12 +24,6 @@ export default (props) => {
           </ul>
         </nav>
       </div>
-      <div className="credits fadeIn-element">
-        <a className="toggle-credits-content"><span>Photo Credit</span></a>
-      </div>
-      <div className="instagram-feed fadeIn-element">
-        <a className="toggle-instagram-feed-content"><span>Instagram Feed</span></a>
-      </div>
     </div>
 
     {/* footer for mobile */}
@@ -54,9 +48,6 @@ export default (props) => {
                 <li className="lifting">
                   <a href="#works">Works</a>
                 </li>
-                <li className="lifting-first toggle-credits-content">
-                  <a href="#">Photo Credit</a>
-                </li>
               </ul><a className="menu-trigger ion-android-menu" href="#"></a>
             </li>
           </ul>
@@ -68,7 +59,7 @@ export default (props) => {
       <div id="subscribe-wrapper">
         <div id="newsletter">
           <div className="newsletter fadeIn-element">
-            <form action="http://www.11-76.com/themes/the-one-responsive/subscribe.php" id="subscribe" method="post" name="subscribe">
+            <form action="https://riventus.vercel.app" id="subscribe" method="post" name="subscribe">
               <input className="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Email" type="text" />
               <button className="btn btn-padding btn-pc c-btn c-btn-inverse"><span className="btn-label">Subscribe</span></button> 
               <button className="btn btn-padding btn-mobile c-btn c-btn-inverse"><span className="btn-label"><i className="ion-android-send"></i></span></button>

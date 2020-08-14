@@ -6,7 +6,7 @@ const {
 
 const routes = [
   { path: base, component: React.lazy(() => import('../views/pages/')), exact : true },
-  { path: pagetest, component: React.lazy(() => import('../views/pages/Page1')), exact : true },
+  { path: pagetest, component: React.lazy(() => import('../views/pages/SliderContainer')), exact : true },
 ];
 
 export default routes;

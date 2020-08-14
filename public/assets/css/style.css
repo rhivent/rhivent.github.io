@@ -2513,6 +2513,11 @@ display: none;
 left: 0;
 bottom: 100%;
 }
+@media only screen and (max-width: 640px) {
+  .menu-mobile li ul {
+    display: block;
+  }
+}
 
 .menu-mobile li:hover ul {
 display: block;

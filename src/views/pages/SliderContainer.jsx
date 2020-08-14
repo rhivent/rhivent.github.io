@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
 
-const PageOne = (props) => {
+const SliderContainer = (props) => {
   const contentStyle = {
     height: '100vh',
     color: '#fff',
@@ -28,4 +28,4 @@ const PageOne = (props) => {
   );
 }
 
-export default PageOne;
+export default SliderContainer;

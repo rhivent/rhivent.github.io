@@ -10,15 +10,14 @@ const PublicRoute = ({ restricted, ...rest}) => {
     // restricted = true meaning restricted route
   return (<>
     {routes.map((route,idx) => {
-      return (<>
+      return (
       <Route 
         key={idx}
         path={route.path}
         exact={route.exact}
         name={route.name} 
         render={props => <route.component {...props} />}
-      />
-      </>)
+      />)
       })
     }
   {!routePath.includes(pathname) && <Route path='*' exact={true} component={PageNotFound} />}
