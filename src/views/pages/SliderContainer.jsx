@@ -4,7 +4,7 @@ import Dashboard from "../components/Dashboard";
 
 const SliderContainer = (props) => {
   const contentStyle = {
-    height: '100vh',
+    height: '100%',
     color: '#fff',
     lineHeight: 'calc(50vh)',
     textAlign: 'center',
@@ -12,18 +12,10 @@ const SliderContainer = (props) => {
   };
 
   return (
-    <Carousel autoplay style={{height:'100vh'}}>
+  <Carousel autoplay style={{height:'67vh',top:'5.3em'}}>
+    <Dashboard />
     <div>
-      <Dashboard />
-    </div>
-    <div>
-      <h3 style={contentStyle}>2</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>3</h3>
-    </div>
-    <div>
-      <h3 style={contentStyle}>4</h3>
+      <h3 style={contentStyle}>Slide 2</h3>
     </div>
   </Carousel>
   );

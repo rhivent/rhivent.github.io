@@ -20,7 +20,7 @@ export default (props) => {
             <a href="mailto:ventusmn@gmail.com" target="_blank" rel="noopener noreferrer"><span className="ion-email-unread"></span></a>
           </li>
           <li className="social-icon">
-            <a href="https://youtube.com/channel/UCBsSxrVeP_FgLIUTuRKS-tA" target="_blank" rel="noopener noreferrer"><span className="ion-social-youtube"></span></a>
+            <a href="https://www.youtube.com/channel/UCBsSxrVeP_FgLlUTuRKS-tA" target="_blank" rel="noopener noreferrer"><span className="ion-social-youtube"></span></a>
           </li>
           <li className="social-icon">
             <a href="https://linkedin.com/in/riventusaritonang" target="_blank" rel="noopener noreferrer"><span className="ion-social-linkedin"></span></a>
@@ -40,24 +40,30 @@ export default (props) => {
         <a className="location-modal-launcher"><Button type="text" onClick={() => setLoc(true)} style={{color:'whitesmoke'}}>Location</Button></a>
       </div>
       <div className="contact-launcher fadeIn-element">
-        <a className="contact-modal-launcher"><Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Contact</Button></a>
+        <a className="contact-modal-launcher"><Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Resume</Button></a>
       </div>
     </div>
     <Modal 
+      width="90vw"
       visible={loc}
       onCancel={() => setLoc(false)}
       footer={null}
       centered
     >
-      Location
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8848904299367!2d106.78510502514459!3d-6.250576019451617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f169ba5e95a3%3A0x4723c0d7ccc0bcab!2sMusholla%20Darussalam!5e0!3m2!1sid!2sid!4v1597650147798!5m2!1sid!2sid" frameBorder="0" width="100%" style={{border:0,height:'90vh'}} allowFullScreen aria-hidden="false" tabIndex="0"></iframe>
     </Modal>
     <Modal 
+      width="90vw"
       visible={contact}
       onCancel={() => setcontact(false)}
       footer={null}
       centered
     >
-      Contact
+      <iframe 
+        src="https://docs.google.com/document/d/1Pd7HFO381fX1pFV9q4nlMYzYR_9bMULu/edit" 
+        style={{height:'90vh'}}
+        width="100%"
+      ></iframe>
     </Modal>
   </>);
 };

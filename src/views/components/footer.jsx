@@ -1,6 +1,15 @@
 import React from "react";
+import { Drawer, Button, Space } from "antd";
+import { EllipsisOutlined } from "@ant-design/icons";
+import "./styles/footer.style.scss";
 
-export default (props) => {
+export default () => {
+  const [drawer,setDrawer] = React.useState(false);
+
+  const onClose = () => {
+    setDrawer(false);
+  }
+
   return(<>
     <div className="border-bottom-menu bottom-position">
       <div className="fadeIn-element" id="menu">
@@ -32,23 +41,9 @@ export default (props) => {
         <nav className="menu" id="menu-mobile">
           <ul>
             <li>
-              <ul>
-                <li className="lifting">
-                  <a href="#home">Home</a>
-                </li>
-                <li className="lifting">
-                  <a href="#news">News</a>
-                </li>
-                <li className="lifting">
-                  <a href="#about">About</a>
-                </li>
-                <li className="lifting">
-                  <a href="#services">Services</a>
-                </li>
-                <li className="lifting">
-                  <a href="#works">Works</a>
-                </li>
-              </ul><a className="menu-trigger ion-android-menu" href="#"></a>
+              {window.screen.width < 644 ?
+                <Button icon={<EllipsisOutlined />} className="menu-trigger ion-android-menu" type="text" onClick={() => setDrawer(true)} style={{transform:'translateY(1em)'}}></Button>
+              : null}
             </li>
           </ul>
         </nav>
@@ -68,5 +63,22 @@ export default (props) => {
         </div>
       </div>
     </div>
+    <Drawer
+      placement="bottom"
+      onClose={onClose}
+      visible={drawer}
+      closable={false}
+      key="bottom"
+      height="4.375em"
+      style={{borderRadius:'50% 0 0 0'}}
+    >
+      <Space>
+        <Button type="text" onClick={e => e.preventDefault()}>Home</Button>
+        <Button type="text" onClick={e => e.preventDefault()}>News</Button>
+        <Button type="text" onClick={e => e.preventDefault()}>About</Button>
+        <Button type="text" onClick={e => e.preventDefault()}>Services</Button>
+        <Button type="text" onClick={e => e.preventDefault()}>Works</Button>
+      </Space>
+    </Drawer>
   </>);
 };
