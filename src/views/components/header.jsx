@@ -50,7 +50,10 @@ export default (props) => {
       footer={null}
       centered
     >
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8848904299367!2d106.78510502514459!3d-6.250576019451617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f169ba5e95a3%3A0x4723c0d7ccc0bcab!2sMusholla%20Darussalam!5e0!3m2!1sid!2sid!4v1597650147798!5m2!1sid!2sid" frameBorder="0" width="100%" style={{border:0,height:'90vh'}} allowFullScreen aria-hidden="false" tabIndex="0"></iframe>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d416.8848904299367!2d106.78510502514459!3d-6.250576019451617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f169ba5e95a3%3A0x4723c0d7ccc0bcab!2sMusholla%20Darussalam!5e0!3m2!1sid!2sid!4v1597650147798!5m2!1sid!2sid" 
+        frameBorder="0" width="100%" style={{border:0,height:'90vh'}} 
+        allowFullScreen aria-hidden="false" tabIndex="0" title="Location Riventus"></iframe>
     </Modal>
     <Modal 
       width="90vw"
@@ -63,6 +66,7 @@ export default (props) => {
         src="https://docs.google.com/document/d/1Pd7HFO381fX1pFV9q4nlMYzYR_9bMULu/edit" 
         style={{height:'90vh'}}
         width="100%"
+        title="Resume Riventus"
       ></iframe>
     </Modal>
   </>);

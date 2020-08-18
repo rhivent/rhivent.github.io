@@ -2,6 +2,9 @@ import React from "react";
 import { Drawer, Button, Space } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
 import "./styles/footer.style.scss";
+import DrawerContainer from './DrawerContainer';
+
+const containerDrawer = (props) => <DrawerContainer drawerup={props} />
 
 export default () => {
   const [drawer,setDrawer] = React.useState(false);
@@ -16,19 +19,19 @@ export default () => {
         <nav className="menu">
           <ul>
             <li>
-              <a href="#home">Home</a>
+            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Home</Button>
             </li>
             <li>
-              <a href="#news">News</a>
+            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>News</Button>
             </li>
             <li>
-              <a href="#about">About</a>
+            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>About</Button>
             </li>
             <li>
-              <a href="#services">Services</a>
+            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Blog</Button>
             </li>
             <li>
-              <a href="#works">Works</a>
+            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Work</Button>
             </li>
           </ul>
         </nav>
@@ -49,7 +52,7 @@ export default () => {
         </nav>
       </div>
       <div className="copyright fadeIn-element">
-        <a href="https://rhivent.github.io">Customize by Riventus</a>
+        <a href="https://rhivent.github.io">Customized by Riventus</a>
       </div>
       <div id="subscribe-wrapper">
         <div id="newsletter">
@@ -76,7 +79,7 @@ export default () => {
         <Button type="text" onClick={e => e.preventDefault()}>Home</Button>
         <Button type="text" onClick={e => e.preventDefault()}>News</Button>
         <Button type="text" onClick={e => e.preventDefault()}>About</Button>
-        <Button type="text" onClick={e => e.preventDefault()}>Services</Button>
+        <Button type="text" onClick={e => e.preventDefault()}>Blog</Button>
         <Button type="text" onClick={e => e.preventDefault()}>Works</Button>
       </Space>
     </Drawer>
