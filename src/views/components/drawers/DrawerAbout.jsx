@@ -1,30 +1,22 @@
 import React from "react";
-import { Carousel } from "antd";
 import DrawerContainer from "./DrawerContainer";
-const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+import mypict from "../../../vendor/media/image/mypict.jpeg";
+import { Typography } from "antd";
+import '../styles/drwabout.scss';
+
 export default (props) => {
   return(<DrawerContainer {...props}>
-    <div style={{backgroundColor:'tomato'}}>
-      <Carousel autoplay>
-        <div>
-          <h3 style={contentStyle}>1</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-      </Carousel>
-    </div>
+    <center>
+      <div style={{display:'grid',width:'70%'}}>
+        <figure>
+          <img src={mypict} alt="mypict" style={{borderRadius:'50%'}} />
+        </figure>
+        <Typography.Title level={4}>Riventus AHA</Typography.Title>
+        <Typography.Text strong>FrontEnd Developer</Typography.Text>
+        <Typography.Paragraph>
+          After +1 year on programming career, I am really excited to build more project with more benefit to the people and make something valuable with modern tech stack. Prefer work on web based environment including web design using HTML, CSS, ReactJS.
+        </Typography.Paragraph>
+      </div>
+    </center>
   </DrawerContainer>)
 };
