@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'antd';
-import Dashboard from "../components/Dashboard";
-import Dashboard2 from "../components/Dashboard2";
+import Dashboard from "../components/dashboard/Dashboard";
+import Dashboard2 from "../components/dashboard/Dashboard2";
 
 const SliderContainer = (props) => {
 

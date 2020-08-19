@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout,Card } from "antd";
+import { Layout } from "antd";
 import Particles from 'react-particles-js';
 
 export default () => {

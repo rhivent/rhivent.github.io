@@ -1,17 +1,34 @@
 import React from "react";
-import { Drawer, Button, Space } from "antd";
+import { Button, Space } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
+import DrawerContainer from "./drawers/DrawerContainer";
+import DrawerAbout from "./drawers/DrawerAbout";
+import DrawerBlog from "./drawers/DrawerBlog";
+import DrawerNews from "./drawers/DrawerNews";
+import DrawerWork from "./drawers/DrawerWork";
 import "./styles/footer.style.scss";
-import DrawerContainer from './DrawerContainer';
-
-const containerDrawer = (props) => <DrawerContainer drawerup={props} />
 
 export default () => {
-  const [drawer,setDrawer] = React.useState(false);
+  const [menuOpt,setmenuOpt] = React.useState({
+    about : false,
+    blog : false,
+    news : false,
+    mobile: false,
+    work : false,
+  });
 
-  const onClose = () => {
-    setDrawer(false);
-  }
+  const handleClickMenu = (type = '') => {
+    switch (type) {
+      case '':
+        setmenuOpt({});
+        break;
+      default:
+        setmenuOpt({...menuOpt, [type]:true});
+        break;
+    }
+  };
+
+  const propsDrawerMenu = {menuOpt,setmenuOpt};
 
   return(<>
     <div className="border-bottom-menu bottom-position">
@@ -19,24 +36,29 @@ export default () => {
         <nav className="menu">
           <ul>
             <li>
-            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Home</Button>
+            <Button type='text' style={{color:'#fff'}}>Home</Button>
             </li>
             <li>
-            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>News</Button>
+            <Button type='text' onClick={() => handleClickMenu('news')} style={{color:'#fff'}}>News</Button>
             </li>
             <li>
-            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>About</Button>
+            <Button type='text' onClick={() => handleClickMenu('about')} style={{color:'#fff'}}>About</Button>
             </li>
             <li>
-            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Blog</Button>
+            <Button type='text' onClick={() => handleClickMenu('blog')} style={{color:'#fff'}}>Blog</Button>
             </li>
             <li>
-            <Button type="text" onClick={e => {e.preventDefault(); containerDrawer(true)}} style={{color:'#fff'}}>Work</Button>
+            <Button type='text' onClick={() => handleClickMenu('work')} style={{color:'#fff'}}>Work</Button>
             </li>
           </ul>
         </nav>
       </div>
     </div>
+
+    <DrawerAbout {...propsDrawerMenu} type="about" />
+    <DrawerBlog {...propsDrawerMenu} type="blog" />
+    <DrawerNews {...propsDrawerMenu} type="news" />
+    <DrawerWork {...propsDrawerMenu} type="work" />
 
     {/* footer for mobile */}
     <div className="border-bottom bottom-position">
@@ -45,7 +67,13 @@ export default () => {
           <ul>
             <li>
               {window.screen.width < 644 ?
-                <Button icon={<EllipsisOutlined />} className="menu-trigger ion-android-menu" type="text" onClick={() => setDrawer(true)} style={{transform:'translateY(1em)'}}></Button>
+                <Button 
+                  type='text'
+                  onClick={() => handleClickMenu('mobile')}
+                  icon={<EllipsisOutlined />} 
+                  className="menu-trigger ion-android-menu" 
+                  style={{transform:'translateY(1em)'}}
+                ></Button>
               : null}
             </li>
           </ul>
@@ -66,22 +94,22 @@ export default () => {
         </div>
       </div>
     </div>
-    <Drawer
-      placement="bottom"
-      onClose={onClose}
-      visible={drawer}
-      closable={false}
-      key="bottom"
-      height="4.375em"
-      style={{borderRadius:'50% 0 0 0'}}
-    >
+    
+    <DrawerContainer
+      {...propsDrawerMenu}
+      type="mobile"
+      others={{
+        height:"4.375em",
+        closable:false
+      }}
+      >
       <Space>
-        <Button type="text" onClick={e => e.preventDefault()}>Home</Button>
-        <Button type="text" onClick={e => e.preventDefault()}>News</Button>
-        <Button type="text" onClick={e => e.preventDefault()}>About</Button>
-        <Button type="text" onClick={e => e.preventDefault()}>Blog</Button>
-        <Button type="text" onClick={e => e.preventDefault()}>Works</Button>
+        <Button type='text'>Home</Button>
+        <Button type='text' onClick={() => handleClickMenu('news')}>News</Button>
+        <Button type='text' onClick={() => handleClickMenu('about')}>About</Button>
+        <Button type='text' onClick={() => handleClickMenu('blog')}>Blog</Button>
+        <Button type='text' onClick={() => handleClickMenu('work')}>Works</Button>
       </Space>
-    </Drawer>
+    </DrawerContainer>
   </>);
 };
