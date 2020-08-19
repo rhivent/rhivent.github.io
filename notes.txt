@@ -13,3 +13,6 @@ portfolio :
 >} http://eight-channel.surge.sh/ ==> simple mini audio player
 >} http://laughable-steel.surge.sh ==> landing page
 >} http://mean-payment.surge.sh/ ==> simple payment landing page 
+
+link skets design figma
+https://www.figma.com/file/aOwGqReLfQBDAWnQQHZq4a/Untitled?node-id=2%3A126
