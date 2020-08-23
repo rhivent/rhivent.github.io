@@ -37,24 +37,24 @@ export default () => {
   
   React.useEffect(() => {
     const callingData = async () => {
-      // const fromDate = moment().subtract(1, 'months').format('YYYY-MM-DD');
-      // const toDate = moment().format('YYYY-MM-DD');
+      const fromDate = moment().subtract(1, 'months').format('YYYY-MM-DD');
+      const toDate = moment().format('YYYY-MM-DD');
 
-      // try{
-      //   const [
-      //     { articles : mainstory },
-      //     { articles : technology },
-      //     { articles : trending },
-      //   ] = await Promise.all([
-      //     oProvider.newsapi('top-headlines?country=id'),
-      //     oProvider.newsapi('top-headlines?country=id&category=technology'),
-      //     oProvider.newsapi(`everything?language=en&q=trending&from=${fromDate}&to=${toDate}&sortBy=popularity&pageSize=20`),
-      //   ]);
+      try{
+        const [
+          { articles : mainstory },
+          { articles : technology },
+          { articles : trending },
+        ] = await Promise.all([
+          oProvider.newsapi('top-headlines?country=id'),
+          oProvider.newsapi('top-headlines?country=us&category=technology'),
+          oProvider.newsapi(`everything?language=en&q=trending&from=${fromDate}&to=${toDate}&sortBy=popularity&pageSize=20`),
+        ]);
   
-      //   setState({...state,mainstory,technology,trending});
-      // }catch(error) {
-      //   console.log(error?.message);
-      // }
+        setState({...state,mainstory,technology,trending});
+      }catch(error) {
+        console.log(error?.message);
+      }
     };
     callingData();
   },[]);
