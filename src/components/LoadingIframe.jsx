@@ -1,4 +1,4 @@
-import styled,{css} from "styled-components";
+import styled from "styled-components";
 import LoadingGif from "../vendor/media/image/loading.gif";
 
 const LoadingIframe = styled.div`

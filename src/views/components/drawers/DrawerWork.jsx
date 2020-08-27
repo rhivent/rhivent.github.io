@@ -8,6 +8,7 @@ export default (props) => {
   return(<DrawerContainer {...props}>
     <div>
     <iframe 
+      title="Riventus Work"
       style={{height:'90vh'}}
       width="100%" 
       src={url} frameBorder="0">

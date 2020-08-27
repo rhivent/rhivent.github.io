@@ -27,21 +27,21 @@ export default (props) => {
             <a href="https://linkedin.com/in/riventusaritonang" target="_blank" rel="noopener noreferrer"><span className="ion-social-linkedin"></span></a>
           </li>
           <li className="social-icon">
-            <a className="ion-social-github" href="https://github.com/rhivent" target="_blank" rel="noopener noreferrer"></a>
+            <a href="https://github.com/rhivent" target="_blank" rel="noopener noreferrer"><span className="ion-social-github"></span></a>
           </li>
         </ul>
       </div>
       <div className="instagram-feed-mobile-launcher toggle-instagram-feed-content fadeIn-element">
-        <a className="ion-social-instagram" href="https://instagram.com/rhivent" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://instagram.com/rhivent" target="_blank" rel="noopener noreferrer"><span className="ion-social-instagram"></span></a>
       </div>
       <div className="template-title fadeIn-element">
         <img src={MyLogo} alt="Riventus" width="15%" />
       </div>
       <div className="location-launcher fadeIn-element">
-        <a className="location-modal-launcher"><Button type="text" onClick={() => setLoc(true)} style={{color:'whitesmoke'}}>Location</Button></a>
+        <Button type="text" onClick={() => setLoc(true)} style={{color:'whitesmoke'}}>Location</Button>
       </div>
       <div className="contact-launcher fadeIn-element">
-        <a className="contact-modal-launcher"><Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Resume</Button></a>
+        <Button type="text" onClick={() => setcontact(true)} style={{color:'whitesmoke'}}>Resume</Button>
       </div>
     </div>
     <Modal 

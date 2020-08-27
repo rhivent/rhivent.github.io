@@ -51,7 +51,7 @@ export default () => {
           oProvider.newsapi(`everything?language=en&q=trending&from=${fromDate}&to=${toDate}&sortBy=popularity&pageSize=20`),
         ]);
   
-        setState({...state,mainstory,technology,trending});
+        setState(state => ({...state,mainstory,technology,trending}));
       }catch(error) {
         console.log(error?.message);
       }
