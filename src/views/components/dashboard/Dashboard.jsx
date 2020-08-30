@@ -1,17 +1,17 @@
 import React from "react";
 import { Layout } from "antd";
-import Particles from 'react-particles-js';
-import reactlogo from '../../../vendor/media/image/react.png';
-import html from '../../../vendor/media/image/html.png';
-import npm from '../../../vendor/media/image/npm.svg';
-import css from '../../../vendor/media/image/css.png';
-import js from '../../../vendor/media/image/js.png';
+// import Particles from 'react-particles-js';
+// import reactlogo from '../../../vendor/media/image/react.png';
+// import html from '../../../vendor/media/image/html.png';
+// import npm from '../../../vendor/media/image/npm.svg';
+// import css from '../../../vendor/media/image/css.png';
+// import js from '../../../vendor/media/image/js.png';
 
 const Dashboard = () => {
-  return(<Layout style={{backgroundColor:'peru'}}>
-    <Particles 
+  return(<Layout style={{backgroundColor:'coral'}}>
+    {/* <Particles 
       params={{
-	    "particles": {
+      "particles": {
         "number": {
           "value": 20,
           "density": {
@@ -71,10 +71,20 @@ const Dashboard = () => {
             "sync": false
           }
         }
-	    },
+      },
       "retina_detect": false
-	    }}
-    />
+      }}
+    /> */}
+    <Layout.Content style={{alignSelf:'center',zIndex:100}}>
+      <iframe 
+        width="1013" 
+        height="620" 
+        title="idx-live-channel"
+        src="https://www.metube.id/live/IDXChannel" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowFullScreen></iframe>
+    </Layout.Content>
   </Layout>);
 };
 
