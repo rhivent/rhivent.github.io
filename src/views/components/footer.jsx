@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Space } from "antd";
+import { Button, Space, notification } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
 import ModalBlog from "./drawers/ModalBlog";
 import DrawerNews from "./drawers/DrawerNews";
@@ -30,6 +30,23 @@ export default () => {
       default:
         setmenuOpt({...menuOpt, [type]:true});
         break;
+    }
+  };
+
+  const handleInput = (e)=> {
+    e.preventDefault(); 
+    if(e?.target?.value){
+      notification.success({
+        message:  e.target.value,
+        description:
+          '',
+      });
+    }else{
+      notification.error({
+        message: 'TIDAK ADA PESAN',
+        description:
+          '',
+      });
     }
   };
 
@@ -114,10 +131,17 @@ export default () => {
       <div id="subscribe-wrapper">
         <div id="newsletter">
           <div className="newsletter fadeIn-element">
-            <form action="https://riventus.vercel.app" id="subscribe" method="post" name="subscribe">
-              <input className="subscribe-requiredField subscribe-email" id="subscribe-email" name="subscribe-email" placeholder="Email" type="text" />
-              <button className="btn btn-padding btn-pc c-btn c-btn-inverse"><span className="btn-label">Subscribe</span></button> 
-              <button className="btn btn-padding btn-mobile c-btn c-btn-inverse"><span className="btn-label"><i className="ion-android-send"></i></span></button>
+            <form id="subscribe" name="subscribe" onSubmit={(e) => {e.preventDefault(); e.stopPropagation(); }}>
+              <input 
+                className="subscribe-requiredField subscribe-email"
+                id="subscribe-email" 
+                name="subscribeemail" 
+                placeholder="Email" 
+                type="text" 
+                onBlur={handleInput}
+              />
+              <button type="button" className="btn btn-padding btn-pc c-btn c-btn-inverse"><span className="btn-label">Whisp me !</span></button> 
+              <button type="button" className="btn btn-padding btn-mobile c-btn c-btn-inverse"><span className="btn-label"><i className="ion-android-send"></i></span></button>
             </form>
           </div>
         </div>
