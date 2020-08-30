@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Space } from "antd";
 import { EllipsisOutlined } from "@ant-design/icons";
-import DrawerBlog from "./drawers/DrawerBlog";
+import ModalBlog from "./drawers/ModalBlog";
 import DrawerNews from "./drawers/DrawerNews";
 import DrawerWork from "./drawers/DrawerWork";
 import DrawerAbout from "./drawers/DrawerAbout";
@@ -85,7 +85,7 @@ export default () => {
     </div>
 
     <DrawerAbout {...propsDrawerMenu} type="about" />
-    <DrawerBlog {...propsDrawerMenu} type="blog" />
+    <ModalBlog {...propsDrawerMenu} type="blog" />
     <DrawerNews {...propsDrawerMenu} type="news" />
     <DrawerWork {...propsDrawerMenu} type="work" />
 

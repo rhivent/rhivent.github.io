@@ -8,7 +8,7 @@ import css from '../../../vendor/media/image/css.png';
 import js from '../../../vendor/media/image/js.png';
 
 const Dashboard = () => {
-  return(<Layout style={{backgroundColor:'black'}}>
+  return(<Layout style={{backgroundColor:'peru'}}>
     <Particles 
       params={{
 	    "particles": {

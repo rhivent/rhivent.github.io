@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 
 export default () => {
   return (
-  <Layout style={{backgroundColor:'salmon'}}>
+  <Layout style={{backgroundColor:'peru'}}>
     <Particles
       params={{
         "particles": {
